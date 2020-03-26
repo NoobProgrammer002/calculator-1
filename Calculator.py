@@ -75,10 +75,10 @@ class MyWindow(QtWidgets.QMainWindow, MainWindow.Ui_MainWindow):
             if self.operant:
                 self.equal()
 
-            self.operant = operant
             self.stak.append(0)
             self.state = READY
 
+        self.operant = operant
         self.sign = sign
         self.show_operand()
 
